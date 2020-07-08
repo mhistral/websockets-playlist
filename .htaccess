@@ -9,4 +9,4 @@ RewriteRule . /index.php [L]
 </IfModule>
 # END WordPres
 
-Redirect 404 /websockets-playlist/ https://mhistral.github.io/websockets-playlist/public_html/
+FallbackResource /public_html/
