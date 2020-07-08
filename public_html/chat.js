@@ -1,5 +1,5 @@
 // make connection
-var socket = io.connect('http://localhost:4000');
+var socket = io.connect('https://mhistral.github.io/websockets-playlist/public_html/');
 
 //Query Dom
 
