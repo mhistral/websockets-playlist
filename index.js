@@ -5,20 +5,14 @@
 
 
 var express = require('express');
+var socket = require('socket.io');
+var server  = require('http').createServer(app);
 
 // App setup
 var app = express();
-// var server  = require('http').createServer(app);
-var socket = require('socket.io').listen(server);
-
-let port=process.env.PORT||4000;
-var server =  app.listen(port, function(){
-    console.log(`listening to request on port ${port}`); 
+var server =  app.listen(4000, function(){
+    console.log('listening to request on port 4000');
 });
-
-// var server =  app.listen(4000, function(){
-//     console.log('listening to request on port 4000');
-// });
 
 // Static Files
 
