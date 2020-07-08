@@ -5,8 +5,7 @@ RewriteBase /
 RewriteRule ^index.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . https://mhistral.github.io/websockets-playlist/public_html/ [L]
+RewriteRule . /public_html/ [L]
 </IfModule>
 # END WordPres
 
-FallbackResource /public_html/
